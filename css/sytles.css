@@ -2,43 +2,44 @@ body {
 	font-family:'Open Sans', sans-serif;
 	/*overflow-x: hidden;*/
 }
-/* width */
-::-webkit-scrollbar {
-    width: 7px;
-}
+/* scrollbar */
+	::-webkit-scrollbar {
+	    width: 7px;
+	}
 
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 3px grey; 
-    
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgba(84, 163, 212,0.7); 
-    
-}
+	/* Track */
+	::-webkit-scrollbar-track {
+	    box-shadow: inset 0 0 3px grey; 
+	    
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	    background: rgba(84, 163, 212,0.7); 
+	    
+	}
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
-}
-.img-center {
-  margin: 0 auto;
-  display: block;
-}
-.text-center {
-  text-align: center;
-}
-.text-justify {
-  text-align: justify;
-}
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	    background: rgba(234, 78, 83,0.7); 
+	}
+/* generic */
+	.img-center {
+	  margin: 0 auto;
+	  display: block;
+	}
+	.text-center {
+	  text-align: center;
+	}
+	.text-justify {
+	  text-align: justify;
+	}
 
-nav li a {
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 0.7px;
-}
+	nav li a {
+	  text-transform: uppercase;
+	  font-weight: 800;
+	  letter-spacing: 0.7px;
+	}
 /* SELECTION COLOR */     
 	/* COMPLETAR */ 
 	::-moz-selection { /* Firefox */
@@ -61,20 +62,24 @@ nav li a {
 	}
 	.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
 		background-color: #4787af;
+		color:#F5f5f5;
 	}
 	.dropdown-menu {
 		border: none!important;
 	}
 	.bottom-navbar .dropdown-menu {
-		background-color: rgba(84, 163, 212,0.2);
+		background-color: #4787af;
 	}
+	.dropdown-menu>li>a {
+		font-weight: 500;
+		color:#f5f5f5;
+	}
+	
 	.bottom-navbar.bottom-navbar-opacity .dropdown-menu {
 		background-color: rgb(84, 163, 212);
 		color: #f5f5f5;
 	}
 	/* TOP */
-
-
 	.navbar-fixed-top {
 		border-width: 0px;
 	}
@@ -91,7 +96,6 @@ nav li a {
 	.top-navbar.top-navbar-opacity ul li.colabora a {
 		background: rgb(245, 136, 140);
 		color: #f5f5f5;
-
 	}
 	.top-navbar ul li.novedades a {
 		border: 1.5px solid rgba(0,0,0,0);
@@ -121,7 +125,6 @@ nav li a {
   		color:#f5f5f5;
   		font-weight: 900;
 	}
-
 	/* BOTTOM */
 	.bottom-navbar {
 		background-color: rgba(84, 163, 212,0.2);
@@ -133,20 +136,73 @@ nav li a {
 	.navbar-default .bottom-navbar.bottom-navbar-opacity  .navbar-nav>li>a{
 		color: #f5f5f5;
 	}
-
 /* FOOTER */
 	footer {
 		clear: both;
 	}
+	/* FOOTER */
 
+	/* Underline From Left */
+	.footer {
+		background-color: rgb(84, 163, 212); 
+		color: #f5f5f5;
+	}
+	.footer ul {
+		list-style-type: none;
+		 -webkit-margin-before: 0em;
+	    -webkit-margin-after: 0em;
+	    -webkit-margin-start: 0px;
+	    -webkit-margin-end: 0px;
+	    -webkit-padding-start: 0px;
+	}
+	.footer li a {
+	    padding: 10px;
+	    border-radius: 3px;
+	    color: #fff;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	}
+	.disclaimer {
+		color: rgb(90,89,89);
+	}
+	.hvr-underline-from-left {
+	  display: inline-block;
+	  vertical-align: middle;
+	  -webkit-transform: perspective(1px) translateZ(0);
+	  transform: perspective(1px) translateZ(0);
+	  box-shadow: 0 0 1px transparent;
+	  position: relative;
+	  overflow: hidden;
+	}
+	.hvr-underline-from-left:before {
+	  content: "";
+	  position: absolute;
+	  z-index: -1;
+	  left: 0;
+	  right: 100%;
+	  bottom: 0;
+	  background: #fff;
+	  height: 4px;
+	  -webkit-transition-property: right;
+	  transition-property: right;
+	  -webkit-transition-duration: 0.5s;
+	  transition-duration: 0.5s;
+	  -webkit-transition-timing-function: ease-out;
+	  transition-timing-function: ease-out;
+	}
+	.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+	  right: 0;
+	}
 /* main */
+	.main {
+		text-align: center;
+	}
 	.portada {
-		background-color: #fff;
 		clear: both;
 		
 		}
 	.portada-foto {
-		background-image: url(https://borisscotch.github.io/superarmeangular/imagenes/IMG_2937.JPG);
+		background-image: url(../imagenes/IMG_2937.JPG);
 		background-position: center bottom;
 		background-size: cover;
 		background-attachment: fixed;
@@ -168,14 +224,19 @@ nav li a {
 	.ejes {
 		font-size: 32px;
 		clear: both;
-		padding-top: 20px;
-		
+		padding-top: 35px;
+	}
+	.ejes a {
+		text-decoration: none;
+	}
+	.ejes a:hover {
+		text-decoration: none;
 	}
 	.icon-round {
  		margin: 0 auto;
   		border: 2px solid transparent;
   		border-radius: 50%;
-  		padding: 32px 30px 26px 30px;
+  		padding: 32px;
   		min-width: 80px;
   	}
   	.icon-xl {
@@ -205,11 +266,50 @@ nav li a {
 		color: #286a93;
   		border-color: #286a93;
 	}
-	
+
+	.ejes-texto {
+		padding: 30px 25px 50px 25px;
+	}
 	/*.addbluer {
 		filter: blur(5px) brightness(150%);
 	}*/
 	.portada-interior {
 		
 		
+	}
+/* mission y vision */
+	.misionyvision-portada {
+		background-image: url();
+	}
+	.foto-aside {
+		
+		background-position: top center;
+		background-size: cover;
+		height: 500px;
+		
+	}
+	.foto-aside.aside-1 {
+		-webkit-filter: sepia() hue-rotate(220deg);
+		filter:  sepia() hue-rotate(220deg);
+		background-image: url(../imagenes/IMG_2899.JPG);
+	}
+	.foto-aside.aside-2 {
+		-webkit-filter: sepia() hue-rotate(180deg);
+		filter:  sepia() hue-rotate(160deg);
+		background-image: url(../imagenes/IMG_2890.JPG);
+	}
+	.display-table {
+		width: 100%;
+	    height: 100%;
+	    display: table;
+	    text-align: center;
+	}
+	.display-table div.col-md-6 {
+		padding: 0px;
+	}
+	.texto-aside {
+		display: table-cell;
+    	vertical-align: middle;
+    	height: 500px;
+    	padding: 0px 50px;
 	}
