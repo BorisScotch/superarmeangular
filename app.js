@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 
-myApp.config(function ($routeProvider,  $locationProvider) {
+myApp.config(function ($routeProvider) {
 	$routeProvider
 
 	.when('/', {
@@ -44,7 +44,7 @@ myApp.config(function ($routeProvider,  $locationProvider) {
 		controller: 'emprendedoresController'
 	})
 	 // use the HTML5 History API
-        $locationProvider.html5Mode(true);
+        
 });
 
 
