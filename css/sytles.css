@@ -282,11 +282,9 @@ body {
 		background-image: url();
 	}
 	.foto-aside {
-		
 		background-position: top center;
 		background-size: cover;
 		height: 500px;
-		
 	}
 	.foto-aside.aside-1 {
 		-webkit-filter: sepia() hue-rotate(220deg);
@@ -306,6 +304,12 @@ body {
 	}
 	.display-table div.col-md-6 {
 		padding: 0px;
+	}
+	.display-table div.vision {
+		background-color: rgb(255, 233, 255);
+	}
+	.display-table div.mision {
+		background-color: rgb(240, 254, 255);
 	}
 	.texto-aside {
 		display: table-cell;
