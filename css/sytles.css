@@ -34,7 +34,9 @@ body {
 	.text-justify {
 	  text-align: justify;
 	}
-
+	.invisible {
+		opacity: 0;
+	}
 	nav li a {
 	  text-transform: uppercase;
 	  font-weight: 800;
@@ -212,7 +214,7 @@ body {
 	}
 	.portada .portada-interior {
 		font-size: 18px;
-		margin-top: -125px;
+		margin-top: -225px;
 		background-color: rgb(255, 255, 255);
 		border-radius: 7px;
 		line-height: 32px;
@@ -221,7 +223,10 @@ body {
 		margin: 0px!important;
 	}
 	.portada .portada-interior h1 {
-		margin: 20px!important;
+		margin: 50px!important;
+		font-size: 125px;
+		font-weight: 900;
+		font-family: 'Alegreya Sans SC', sans-serif;
 	}
 	.ejes {
 		font-size: 32px;
@@ -297,8 +302,8 @@ body {
 	}
 /* mission y vision */
 	.misionyvision-portada {
-		background-image: url(../imagenes/IMG-20170420-WA0001.JPG);
-		background-position: top center;
+		background-image: url(../imagenes/IMG_2926.JPG);
+		background-position: center center;
 		background-attachment: fixed;
 		background-size: cover;
 		height: 65vh;	
