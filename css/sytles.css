@@ -89,6 +89,7 @@ body {
 		max-height: 40px;
 		height: 40px;
 		line-height: 13px;
+		transition: all 0.3s ease;
 	}
 	.top-navbar.top-navbar-opacity,
 	.top-navbar.top-navbar-opacity ul li.novedades a,
@@ -128,6 +129,7 @@ body {
 	/* BOTTOM */
 	.bottom-navbar {
 		background-color: rgba(84, 163, 212,0.2);
+		transition: all 0.3s ease;
 	}
 	.bottom-navbar.bottom-navbar-opacity {
 		background-color: rgb(84, 163, 212);
