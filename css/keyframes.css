@@ -1,0 +1,78 @@
+
+	@-webkit-keyframes letra-m {
+		0%
+			{fill: rgb(245, 136, 140);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+		25%
+			{fill:#A9A9AF;-webkit-transform: scale(1.1, 1.1);transform: scale(1.1, 1.1);}
+		50%
+			{fill: rgb(245, 136, 140);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+		75%
+			{fill:#A9A9AF;-webkit-transform: scale(1.1, 1.1);transform: scale(1.1, 1.1);}
+		100%
+			{fill: rgb(245, 136, 140);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+	}
+	@keyframes letra-m {
+		0%
+			{fill: rgb(245, 136, 140);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+		25%
+			{fill:#A9A9AF;-webkit-transform: scale(1.1, 1.1);transform: scale(1.1, 1.1);}
+		50%
+			{fill: rgb(245, 136, 140);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+		75%
+			{fill:#A9A9AF;-webkit-transform: scale(1.1, 1.1);transform: scale(1.1, 1.1);}
+		100%
+			{fill: rgb(245, 136, 140);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+	}
+	@-webkit-keyframes cletra-e {
+		0%
+			{fill:rgb(84, 163, 212);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+		25%
+			{fill:#A9A9AF;-webkit-transform: scale(1, 1);transform: scale(1.1, 1.1);}
+		50%
+			{fill:rgb(84, 163, 212);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+		75%
+			{fill:#A9A9AF;-webkit-transform: scale(1, 1);transform: scale(1.1, 1.1);}
+		100%
+			{fill:rgb(84, 163, 212);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+	}
+	@keyframes letra-e {
+		0%
+			{fill:rgb(84, 163, 212);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+		25%
+			{fill:#A9A9AF;-webkit-transform: scale(1, 1);transform: scale(1.1, 1.1);}
+		50%
+			{fill:rgb(84, 163, 212);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+		75%
+			{fill:#A9A9AF;-webkit-transform: scale(1, 1);transform: scale(1.1, 1.1);}
+		100%
+			{fill:rgb(84, 163, 212);-webkit-transform: scale(1, 1);transform: scale(1, 1);}
+	}
+	#SVG-logo-e_1_ {
+		animation-name: letra-m;
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count:infinite;
+		-webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+		animation-timing-function: cubic-bezier(0, 0, 1, 1);
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		transform-box: fill-box;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	#SVG-logo-m {
+		animation-name: letra-e;
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-iteration-count: infinite;
+		animation-iteration-count:infinite;
+		-webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+		animation-timing-function: cubic-bezier(0, 0, 1, 1);
+		-webkit-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		transform-box: fill-box;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
