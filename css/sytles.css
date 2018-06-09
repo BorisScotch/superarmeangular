@@ -346,6 +346,20 @@ body {
 	.texto-aside p {
 		font-size: 20px;
 	}
+	.valores {
+		font-size: 18px;
+
+	}
+	.valores .col-md-4 {
+		padding: 0px;
+	}
+	.valores-inner {
+		padding: 35px 15px;
+	}
+	.valores .valores-inner p {
+		padding: 0px 50px;
+		text-align: justify;
+	}
 
 /* HISTORIA */
 	.timeline {
