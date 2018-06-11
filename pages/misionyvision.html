@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-	<div class="misionyvision-portada" id="scene">
+	<div class="misionyvision-portada" id="top">
 		<div  class="portada-titulo">
 			<h1>QUIÉNES SOMOS</h1>	
 		</div>
@@ -39,42 +39,102 @@
 		</div>
 	</div>
 	<div class="valores">
-		<h1>NUESTROS VALORES</h1>
-		<div class="col-md-4">
-			<div class="valores-inner">
-				<h3>DIVERSIDAD</h3>
-				<p>Promovemos el acceso a oportunidades para todos, sin discriminación de género, raza, religión, ocupación, condición económica o habilidades, para reducir brechas y producir una sociedad más inclusiva.</p>
+		<div class="misionyvision-portada" id="bottom">
+			<div class="portada-titulo">
+				<h1>NUESTROS VALORES</h1>
 			</div>
 		</div>
-		<div class="col-md-4">
-			<div class="valores-inner">
-				<h3>SOLIDARIDAD</h3>
-				<p>Trabajamos a la par de nuestros emprendedores, acompañándolos en su desarrollo personal y laboral. Aprendemos de sus capacidades y compartimos sus dificultades y anhelos.</p>
+
+		<div class="cards">
+			<div class=" card is-collapsed">
+				<div class="card__inner js-expander">
+					<span>DIVERSIDAD</span>
+				</div>
+				<div class="card__expander">
+					<i class="fa fa-close js-collapser"></i>
+					Promovemos el acceso a oportunidades para todos, sin discriminación de género, raza, religión, ocupación, condición económica o habilidades, para reducir brechas y producir una sociedad más inclusiva.
+				</div>
+			</div>
+			<div class=" card is-collapsed">
+				<div class="card__inner js-expander">
+					<span>SOLIDARIDAD</span>
+				</div>
+				<div class="card__expander">
+					<i class="fa fa-close js-collapser"></i>
+					Trabajamos a la par de nuestros emprendedores, acompañándolos en su desarrollo personal y laboral. Aprendemos de sus capacidades y compartimos sus dificultades y anhelos.
+				</div>
+			</div>
+			<div class=" card is-collapsed">
+				<div class="card__inner js-expander">
+					<span>COMPROMISO</span>
+				</div>
+				<div class="card__expander">
+					<i class="fa fa-close js-collapser"></i>
+					Nuestro tiempo ayuda a crear oportunidades y combatir la injusticia. Por eso, el compromiso de nuestros voluntarios con el proyecto es una piedra fundamental de nuestra institución.
+				</div>
+			</div>
+			<div class=" card is-collapsed">
+				<div class="card__inner js-expander">
+					<span>PERSEVERANCIA</span>
+				</div>
+				<div class="card__expander">
+					<i class="fa fa-close js-collapser"></i>
+					Creemos en el potencial de nuestros emprendedores. Trabajamos para devolverles la confianza en sí mismos, enseñándoles que con firmeza y constancia podrán alcanzar la meta deseada.
+				</div>
+			</div>
+			<div class=" card is-collapsed">
+				<div class="card__inner js-expander">
+					<span>RESPETO</span>
+				</div>
+				<div class="card__expander">
+					<i class="fa fa-close js-collapser"></i>
+					Escuchamos y damos consideración al conocimiento, experiencia y diferentes puntos de vista de las personas con las que interactuamos. La fortaleza está en nuestras diferencias y no en nuestras similitudes.
+				</div>
+			</div>
+			<div class=" card is-collapsed">
+				<div class="card__inner js-expander">
+					<span>UNIDAD</span>
+				</div>
+				<div class="card__expander">
+					<i class="fa fa-close js-collapser"></i>
+					Consideramos que el trabajo en equipo y la colaboración con otras organizaciones e instituciones es fundamental para mejorar el rendimiento de nuestro trabajo y lograr un mayor impacto en la sociedad.
+				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
-			<div class="valores-inner">
-				<h3>COMPROMISO</h3>
-				<p>Nuestro tiempo ayuda a crear oportunidades y combatir la injusticia. Por eso, el compromiso de nuestros voluntarios con el proyecto es una piedra fundamental de nuestra institución.</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="valores-inner">
-				<h3>PERSEVERANCIA</h3>
-				<p>Creemos en el potencial de nuestros emprendedores. Trabajamos para devolverles la confianza en sí mismos, enseñándoles que con firmeza y constancia podrán alcanzar la meta deseada.</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="valores-inner">
-				<h3>RESPETO</h3>
-				<p>Escuchamos y damos consideración al conocimiento, experiencia y diferentes puntos de vista de las personas con las que interactuamos. La fortaleza está en nuestras diferencias y no en nuestras similitudes.</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="valores-inner">
-				<h3>UNIDAD</h3>
-				<p>Consideramos que el trabajo en equipo y la colaboración con otras organizaciones e instituciones es fundamental para mejorar el rendimiento de nuestro trabajo y lograr un mayor impacto en la sociedad.</p>
-			</div>
-		</div>
+
 	</div>
 </div>
+<script type="text/javascript">
+var $cell = $('.card');
+
+//open and close card when clicked on card
+$cell.find('.js-expander').click(function() {
+
+  var $thisCell = $(this).closest('.card');
+
+  if ($thisCell.hasClass('is-collapsed')) {
+    $cell.not($thisCell).removeClass('is-expanded').addClass('is-collapsed').addClass('is-inactive');
+    $thisCell.removeClass('is-collapsed').addClass('is-expanded');
+    
+    if ($cell.not($thisCell).hasClass('is-inactive')) {
+      //do nothing
+    } else {
+      $cell.not($thisCell).addClass('is-inactive');
+    }
+
+  } else {
+    $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+    $cell.not($thisCell).removeClass('is-inactive');
+  }
+});
+
+//close card when click on cross
+$cell.find('.js-collapser').click(function() {
+
+  var $thisCell = $(this).closest('.card');
+
+  $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+  $cell.not($thisCell).removeClass('is-inactive');
+
+});
+</script>
