@@ -627,7 +627,7 @@ body {
 
 /* equipo */
 	.equipo-portada {
-		background-image: url(https://raw.githubusercontent.com/BorisScotch/superarmeangular/gh-pages/imagenes/1804.jpg);
+		background-image: url(../imagenes/1804.jpg);
 		height: 45vh;
 		background-position: center center;
 		background-attachment: fixed;
