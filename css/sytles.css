@@ -642,3 +642,7 @@ body {
 	.mc-footer .fab {
 		text-align: center;
 	}
+	.material-card .img-container img {
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    	filter: grayscale(100%);
+	}
