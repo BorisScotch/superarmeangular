@@ -43,6 +43,14 @@ myApp.config(function ($routeProvider) {
 		templateUrl: 'pages/emprendedores.html',
 		controller: 'emprendedoresController'
 	})
+	.when('/capacitaciones', {
+		templateUrl: 'pages/capacitaciones.html',
+		controller: 'capacitacionesController'
+	})
+	.when('/asesoramientos', {
+		templateUrl: 'pages/asesoramientos.html',
+		controller: 'asesoramientosController'
+	})
 	 // use the HTML5 History API
         
 });
@@ -79,5 +87,11 @@ myApp.controller('testimoniosController',
 	['$scope', '$log',  function($scope, $log){
 }]);
 myApp.controller('emprendedoresController', 
+	['$scope', '$log',  function($scope, $log){
+}]);
+myApp.controller('capacitacionesController', 
+	['$scope', '$log',  function($scope, $log){
+}]);
+myApp.controller('asesoramientosController', 
 	['$scope', '$log',  function($scope, $log){
 }]);
